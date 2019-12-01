@@ -62,7 +62,7 @@ choose_best_annotation.sh
 
 
 
-Resulting bed file will include 7 elements under class: SINE, LINE, LTR, Simple_repeat, DNA, Low_Complexity, or Other (includes anything not already named)
+Resulting bed file will include 7 unique elements under class: SINE, LINE, LTR, Simple_repeat, DNA, Low_Complexity, or Other (includes anything not already named)
 
 | chr | dhsStart | dhsEnd | class | family |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
