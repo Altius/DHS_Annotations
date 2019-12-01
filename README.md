@@ -85,4 +85,5 @@ Counts:
 | Others | 20917 | 
 | Simple_repeat | 118922 | 
 | SINE | 513603 | 
+| Total |  1930749 |
 
