@@ -13,10 +13,10 @@ Annotating the DHS Masterlist with Repeated Regions
 | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | chr1  |	67108753  | 67109046  | + | L1P5  | LINE  | L1  |
-| Content Cell  | Content Cell  |
-| ------------- | ------------- 
-| Content Cell  | Content Cell  
-| Content Cell  | Content Cell  
+| chr1  | 8388315 | 8388618 | - | AluY  | SINE  | Alu |
+| chr1  | 25165803  | 25166380  | + | L1MB5 | LINE  | L1  |
+| chr1  | 33554185  | 33554483  | - | AluSc | SINE  | Alu |
+| chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
 
 ### Map to DHS Masterlist and echo the overlap and mapped-element size
 
