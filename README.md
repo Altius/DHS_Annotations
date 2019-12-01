@@ -21,10 +21,12 @@ Annotating the DHS Masterlist with Repeated Regions
 ### Map to DHS Masterlist and echo the overlap and mapped-element size
 
 ```
-tail -n +2 $repeats \
-| /net/module/sw/bedops/2.4.37-typical/bin/sort-bed - \
-| grep -v LTR? | grep -v DNA? | grep -v RC? | grep -v SINE? \
-| /net/module/sw/bedops/2.4.37-typical/bin/bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \
+module load bedops
+ 
+tail -n +2 $repeats \  #Remove Header
+| sort-bed - \      #Sort Repeat file
+| grep -v LTR? | grep -v DNA? | grep -v RC? | grep -v SINE? \ #Remove classications with question marks
+| /net/module/sw/bedops/2.4.37-typical/bin/bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \ # Map to DHS masterlist
 > repeats_mapped_with_overlapPlusExtra.bed
 fi
 ```
