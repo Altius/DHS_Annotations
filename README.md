@@ -48,6 +48,8 @@ Output:
 
 
 
+
+
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
 
 > Need: 
@@ -57,6 +59,8 @@ Run
 ```
 choose_best_annotation.sh
 ```
+
+
 
 Resulting bed file will include 7 elements: SINE, LINE, LTR, Simple_repeat, DNA, Low_Complexity, or Other (includes anything not already named)
 
