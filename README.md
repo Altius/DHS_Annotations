@@ -10,6 +10,13 @@ Annotating the DHS Masterlist with Repeated Regions
 
 
 ### Download RepeatMasker File
+| genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| chr1  |	67108753  | 67109046  | + | L1P5  | LINE  | L1  |
+| Content Cell  | Content Cell  |
+| ------------- | ------------- 
+| Content Cell  | Content Cell  
+| Content Cell  | Content Cell  
 
 ### Map to DHS Masterlist and echo the overlap and mapped-element size
 
