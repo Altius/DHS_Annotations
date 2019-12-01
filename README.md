@@ -44,6 +44,10 @@ Output:
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
+Need: repeats_mapped_with_overlapPlusExtra.bed
+
+Muliple overlaps will be seperated by a semicolon
+
 Run
 ```
 choose_best_annotation.sh
