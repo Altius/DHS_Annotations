@@ -47,7 +47,6 @@ Output:
 Run
 ```
 choose_best_annotation.sh
-
 ```
 
 ### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
