@@ -36,6 +36,8 @@ tail -n +2 $repeats \
 > repeats_mapped_with_overlapPlusExtra.bed
 ```
 
+**Multiple mapped elements will be seperated by a semicolon**
+
 Output:
 
 | chr | dhsStart | dhsEnd | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
@@ -44,10 +46,9 @@ Output:
 | chr1 | 66370 | 66482 | chr1 | 66157 | 66632 |+ |(AT)n | Simple_repeat | Simple_repeat | 112 | 475 |
 | chr1 | 79100 | 79231| chr1 | 78890 | 79850 | + | L1PREC2 | LINE | L1 | 131| 960 |
 
-**Multiple mapped elements will be seperated by a semicolon**
 
 
-### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
+### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
 
 > Need: 
 > repeats_mapped_with_overlapPlusExtra.bed
@@ -57,7 +58,7 @@ Run
 choose_best_annotation.sh
 ```
 
-Resulting bed file:
+Resulting bed file will include 7 elements: SINE, LINE, LTR, Simple_repeat, DNA, Low_Complexity, or Other (includes anything not already named)
 
 | chr | dhsStart | dhsEnd | class | family |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
