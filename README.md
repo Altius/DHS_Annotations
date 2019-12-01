@@ -20,6 +20,15 @@ Annotating the DHS Masterlist with Repeated Regions
 
 ### Map to DHS Masterlist and echo the overlap and mapped-element size
 
+```
+tail -n +2 $repeats \
+| /net/module/sw/bedops/2.4.37-typical/bin/sort-bed - \
+| grep -v LTR? | grep -v DNA? | grep -v RC? | grep -v SINE? \
+| /net/module/sw/bedops/2.4.37-typical/bin/bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \
+> repeats_mapped_with_overlapPlusExtra.bed
+fi
+```
+
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
