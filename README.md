@@ -48,6 +48,7 @@ Output:
 
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
+### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
 
 > Need: 
 > repeats_mapped_with_overlapPlusExtra.bed
@@ -57,5 +58,15 @@ Run
 choose_best_annotation.sh
 ```
 
+Resulting bed file:
+| chr | dhsStart | dhsEnd | class | family |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| chr | 151868 | 52040 | SINE | Alu |
+| chr1 | 66370 | 66482 | Simple_repeat | Simple_repeat |
+| chr1 | 79100 | 79231 | LINE | L1 |
+| chr1 | 79430 | 79497 | LINE | L1 |
+| chr1 | 79580 | 79760 | LINE | L1 |
+| chr1 | 87220 | 87295 | SINE | Alu |
 
-### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
+Counts:
+
