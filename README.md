@@ -37,7 +37,8 @@ fi
 ```
 Output:
 
-| genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
