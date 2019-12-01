@@ -37,8 +37,11 @@ fi
 ```
 Output:
 
-| genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| chr | dhsStart | dhsEnd | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| chr1 | 51868 | 52040 | chr1 | 51584 | 51880 | + | AluYj4 | SINE | Alu| 12 | 296 |
+| chr1 | 66370	66482|chr1	66157	66632	+	(AT)n	Simple_repeat	Simple_repeat|112|475 |
+| chr1 | 79100	79231|chr1	78890	79850	+	L1PREC2	LINE	L1|131|960 |
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
