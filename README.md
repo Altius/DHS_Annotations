@@ -18,12 +18,13 @@ Annotating the DHS Masterlist with Repeated Regions
 | chr1  | 33554185  | 33554483  | - | AluSc | SINE  | Alu |
 | chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
 
+
 ### Map to DHS Masterlist and echo the overlap and mapped-element size
 
 1. Remove Header
 2. Sort Repeat File
 3. Remove classifications with question marks
-4. Use Bedmap to map and echo the overlap size and mapped-element size
+4. Use bedmap to map and echo the overlap size and mapped-element size
 
 ```
 module load bedops
@@ -34,6 +35,7 @@ tail -n +2 $repeats \
 | bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \ 
 > repeats_mapped_with_overlapPlusExtra.bed
 ```
+
 Output:
 
 | chr | dhsStart | dhsEnd | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
@@ -44,13 +46,16 @@ Output:
 
 **Multiple mapped elements will be seperated by a semicolon**
 
+
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
-> Need: repeats_mapped_with_overlapPlusExtra.bed
+> Need: 
+> repeats_mapped_with_overlapPlusExtra.bed
 
 Run
 ```
 choose_best_annotation.sh
 ```
+
 
 ### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
