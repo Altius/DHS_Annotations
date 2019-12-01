@@ -44,5 +44,10 @@ Output:
 
 ### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 
+Run
+```
+choose_best_annotation.sh
+
+```
 
 ### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
