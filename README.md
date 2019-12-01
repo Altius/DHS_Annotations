@@ -73,5 +73,16 @@ Resulting bed file will include 7 elements: SINE, LINE, LTR, Simple_repeat, DNA,
 | chr1 | 79580 | 79760 | LINE | L1 |
 | chr1 | 87220 | 87295 | SINE | Alu |
 
+
 Counts:
+
+| class | DHSCount |
+| ------------- | ------------- |
+| DNA | 196686 |
+| LINE | 605539 | 
+| Low_complexity | 23210 |
+| LTR | 451872 |
+| Others | 20917 | 
+| Simple_repeat | 118922 | 
+| SINE | 513603 | 
 
