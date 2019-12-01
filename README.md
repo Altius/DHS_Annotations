@@ -47,8 +47,7 @@ Output:
 **Multiple mapped elements will be seperated by a semicolon**
 
 
-### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
-### Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
+### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
 
 > Need: 
 > repeats_mapped_with_overlapPlusExtra.bed
@@ -59,6 +58,7 @@ choose_best_annotation.sh
 ```
 
 Resulting bed file:
+
 | chr | dhsStart | dhsEnd | class | family |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 | chr | 151868 | 52040 | SINE | Alu |
