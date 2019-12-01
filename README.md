@@ -38,7 +38,7 @@ tail -n +2 $repeats \
 
 **Multiple mapped elements will be seperated by a semicolon**
 
-Output:
+Example Output:
 
 | chr | dhsStart | dhsEnd | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily | overlapSize | mapSize |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
