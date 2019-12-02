@@ -6,7 +6,8 @@ Annotating the DHS Masterlist with Repeated Regions
 1. Download RepeatMasker File
 2. Map to DHS Masterlist and echo the overlap and mapped-element size
 3. Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
-4. Rename Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
+4. Rename Class Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
+5. Annotate DHS's based on Family Repeats
 
 
 ### Download RepeatMasker File
@@ -88,7 +89,47 @@ Counts:
 | Total |  1930749 |
 
 
-# Annotate Family Repeats
+### Annotate Family Repeats
+
+1. Split dhs_annotated_7-repeats.bed file into 4 bed files (SINE, LINE, LTR, DNA)
+2. Split Classes into subfamilies
+
+Notes on Subfamilies
+
+* SINE -> Alu, MIR, and Others
+* LTR -> ERVL-MaLR, ERV1, ERVL, Others
+* DNA -> hAT-Charlie, TcMar-Tigger, Others
+* LINE -> L1, L2, Others
 
 > Need:
 > dhs_annotated_7-repeats.bed
+
+Run:
+```
+annotate_families.sh
+```
+
+Output Example
+
+<table>
+<tr><th>SINE.bed </th><th>SINE Family DHS Counts</th></tr>
+<tr><td>
+ 
+
+| chr | dhsStart | dhsEnd | Class | Family |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| chr1 | 51868 | 52040 | SINE | Alu |
+| chr1 | 87220 | 87295 | SINE | Alu |
+| chr1 | 128619 | 128757 | SINE | Alu |
+| chr1 | 284375 | 284489 | SINE | MIR |
+| chr1 | 740730 | 740844 | SINE | Alu |
+
+</td><td>
+
+| Family  | DHSCount  |
+| ------------- | ------------- |
+| Alu | 256390 |
+| MIR | 250203 |
+| Others | 7010 |
+
+</td></tr> </table>
