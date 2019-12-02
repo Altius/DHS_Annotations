@@ -87,3 +87,8 @@ Counts:
 | SINE | 513603 | 
 | Total |  1930749 |
 
+
+# Annotate Family Repeats
+
+> Need:
+> dhs_annotated_7-repeats.bed
