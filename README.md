@@ -10,7 +10,7 @@ Annotating the DHS Masterlist with Repeated Regions
 5. Annotate DHS's based on Family Repeats
 
 
-### Download RepeatMasker File
+## Download RepeatMasker File
 | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | chr1  |	67108753  | 67109046  | + | L1P5  | LINE  | L1  |
@@ -20,7 +20,7 @@ Annotating the DHS Masterlist with Repeated Regions
 | chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
 
 
-### Map to DHS Masterlist and echo the overlap and mapped-element size
+# Map to DHS Masterlist and echo the overlap and mapped-element size
 
 1. Remove Header
 2. Sort Repeat File
@@ -51,7 +51,7 @@ Example Output:
 
 
 
-### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
+# Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
 
 > Need: 
 > repeats_mapped_with_overlapPlusExtra.bed
@@ -89,7 +89,7 @@ Counts:
 | Total |  1930749 |
 
 
-### Annotate Family Repeats
+# Annotate Family Repeats
 
 1. Split dhs_annotated_7-repeats.bed file into 4 bed files (SINE, LINE, LTR, DNA)
 2. Split Classes into subfamilies
@@ -131,5 +131,6 @@ Output Example
 | Alu | 256390 |
 | MIR | 250203 |
 | Others | 7010 |
+| Total | 3591898 |
 
 </td></tr> </table>
