@@ -91,7 +91,7 @@ Counts:
 
 # Annotate Family Repeats
 
-1. Split dhs_annotated_7-repeats.bed file into 4 bed files (SINE, LINE, LTR, DNA)
+1. Extract SINE, LTR, DNA, and LINE annotated DHS's and place in separate bed files
 2. Split Classes into subfamilies
 
 Notes on Subfamilies
