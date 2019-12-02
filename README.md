@@ -92,7 +92,7 @@ Counts:
 # Annotate Family Repeats
 
 1. Extract SINE, LTR, DNA, and LINE annotated DHS's and place in separate bed files
-2. Split Classes into subfamilies
+2. Split Classes into Families
 
 Notes on Subfamilies
 
