@@ -28,7 +28,7 @@ file type returned: gzip compressed
 ```
 
 
-*sample rows and columns*
+*Sample Rows and Columns*
 
 | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
