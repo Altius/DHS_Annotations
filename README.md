@@ -3,7 +3,7 @@ Annotating the DHS Masterlist with Repeated Regions
 
 
 ## Steps
-1. Download RepeatMasker File
+1. Download RepeatMasker and DHS Masterlist Files
 2. Map to DHS Masterlist and echo the overlap and mapped-element size
 3. Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie
 4. Rename Class Annotation to SINE, LINE, LTR, Simple_repeat, DNA, or Other (includes anything not already named)
@@ -38,6 +38,15 @@ file type returned: gzip compressed
 | chr1  | 33554185  | 33554483  | - | AluSc | SINE  | Alu |
 | chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
 
+## Download DHS Masterlist
+* Go to [DHS Mastlerst](https://zenodo.org/record/3542126#.XffhGZNKgWp)
+
+Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
+
+```
+gunzip DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
+cut -f1-3 DHS_Index_and_Vocabulary_hg38_WM20190703.txt > DHS_Index.bed
+
 
 # Map to DHS Masterlist and echo the overlap and mapped-element size
 
@@ -57,7 +66,7 @@ tail -n +2 repeats_ucsc \
 | cut -f6-8,10-13 \
 | sort-bed - \    
 | grep -v LTR? | grep -v DNA? | grep -v RC? | grep -v SINE? \ 
-| bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \ 
+| bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec DHS_Index.bed - \ 
 > repeats_mapped_with_overlapPlusExtra.bed
 ```
 
