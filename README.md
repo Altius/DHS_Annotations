@@ -41,16 +41,20 @@ file type returned: gzip compressed
 
 # Map to DHS Masterlist and echo the overlap and mapped-element size
 
-1. Remove Header
-2. Sort Repeat File
+1. Gunzip repeats_ucsc.gzip
+2. Remove Header
 3. Exract only the columns above
-3. Remove classifications with question marks
-4. Use bedmap to map and echo the overlap size and mapped-element size
+4. Sort File
+5. Remove classifications with question marks
+6. Use bedmap to map and echo the overlap size and mapped-element size
 
 ```
 module load bedops
- 
-tail -n +2 $repeats \  
+
+gunzip repeats_ucsc.gzip
+
+tail -n +2 repeats_ucsc \ 
+| cut -f6-8,10-13 \
 | sort-bed - \    
 | grep -v LTR? | grep -v DNA? | grep -v RC? | grep -v SINE? \ 
 | bedmap --echo --echo-map --echo-overlap-size --echo-map-size --skip-unmapped --ec $dhs - \ 
