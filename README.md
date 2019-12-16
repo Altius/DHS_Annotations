@@ -14,16 +14,16 @@ Annotating the DHS Masterlist with Repeated Regions
 * Go to [Get Repeat File](http://genome.ucsc.edu/cgi-bin/hgTables)
 ```
 Input 
-* Clade: Mammal
-* genome: Human
-* assembly: Dec. 2013 (GRCh38/hg38)
-* group: Repeats
-* track: RepeatMasker
-* table: rmsk
-* region: genome
-* output format: all fields from selected table
-* output file: repeats_ucsc
-* file type returned: gzip compressed
+clade: Mammal
+genome: Human
+assembly: Dec. 2013 (GRCh38/hg38)
+group: Repeats
+track: RepeatMasker
+table: rmsk
+region: genome
+output format: all fields from selected table
+output file: repeats_ucsc
+file type returned: gzip compressed
 
 ```
 
