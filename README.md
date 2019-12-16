@@ -46,7 +46,7 @@ Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 ```
 gunzip DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 cut -f1-3 DHS_Index_and_Vocabulary_hg38_WM20190703.txt > DHS_Index.bed
-
+```
 
 # Map to DHS Masterlist and echo the overlap and mapped-element size
 
