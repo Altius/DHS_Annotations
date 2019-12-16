@@ -11,7 +11,7 @@ Annotating the DHS Masterlist with Repeated Regions
 
 
 ## Download RepeatMasker File
-* Go to [Get Repeat File](http://genome.ucsc.edu/cgi-bin/hgTables)
+* Go to [UCSC Genome Browser Tables](http://genome.ucsc.edu/cgi-bin/hgTables)
 ```
 Input 
 clade: Mammal
