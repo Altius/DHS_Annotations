@@ -28,6 +28,7 @@ file type returned: gzip compressed
 ```
 
 
+*sample rows and columns*
 
 | genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -42,6 +43,7 @@ file type returned: gzip compressed
 
 1. Remove Header
 2. Sort Repeat File
+3. Exract only the columns above
 3. Remove classifications with question marks
 4. Use bedmap to map and echo the overlap size and mapped-element size
 
