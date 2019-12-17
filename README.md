@@ -39,7 +39,7 @@ file type returned: gzip compressed
 | chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
 
 ## Download DHS Masterlist
-* Go to [DHS Mastlerst](https://zenodo.org/record/3542126#.XffhGZNKgWp)
+* Go to [DHS Masterlist](https://zenodo.org/record/3542126#.XffhGZNKgWp)
 
 Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 
