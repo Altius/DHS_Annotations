@@ -17,7 +17,7 @@ tail -n +6 $gencode \
         print $1"\t"$4"\t"$5"\t"$3"\t"$7
     }
 }' \
-| /net/module/sw/bedops/2.4.37-typical/bin/sort-bed -  \
+| sort-bed -  \
 > tmp.gencode
 
 #Expand the transcription region to say promoter. +/- 1KB of TSS
@@ -35,7 +35,7 @@ awk -F'\t' '{
         }
 }' tmp.gencode \
 | grep -v chrM | grep -v Selenocysteine | grep -v codon \
-| /net/module/sw/bedops/2.4.37-typical/bin/sort-bed - \
+| sort-bed - \
 > tmp2.gencode
 
 #Need to find the INTRONS. Difference between gene and (CDS + PROMOTER + UTR) 
