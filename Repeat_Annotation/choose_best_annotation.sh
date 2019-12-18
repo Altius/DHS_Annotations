@@ -51,7 +51,8 @@ awk '{
 }' dhs_annotated_all-repeats.bed > dhs_annotated_7-repeats.bed
 
 #Clean-up
+mkdir extra_files
 mv repeats_mapped_with_overlapPlusExtra.bed extra_files/
-mv masterlist.bed3 extra_files/
+mv DHS_Index.bed extra_files/
 mv overlap-answer.txt extra_files
 mv dhs_annotated_all-repeats.bed extra_files
