@@ -6,10 +6,10 @@
 #DNA -> hAT-Charlie, TcMar-Tigger, Others
 #LINE -> L1, L2, Others
 
-#Split $file into the four classes that have familes
+#Split dhs_annotated_7-repeats.bed into the four classes that have familes
 for i in SINE LINE LTR DNA
 do
-        awk -v class="$i" '{if($4 == class) print}' $file > tmp.${i}.bed
+        awk -v class="$i" '{if($4 == class) print}' dhs_annotated_7-repeats.bed > tmp.${i}.bed
 done
 
 
