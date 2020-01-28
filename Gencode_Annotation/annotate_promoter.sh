@@ -6,7 +6,7 @@ module load bedops
 gencode=gencode.v28.basic.annotation.gtf
 
 #Path to DHS Masterlist 
-dhs=DHS_Index.bed
+dhs=dhs_annotated_gencode28.bed
 
 tail -n +6 $gencode \
 | awk -F'\t' '{
