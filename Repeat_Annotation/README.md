@@ -27,6 +27,8 @@ file type returned: gzip compressed
 
 ```
 
+Download repeats_ucsc.gz
+
 ## Download DHS Masterlist
 * Go to [DHS Masterlist](https://zenodo.org/record/3542126#.XffhGZNKgWp)
 
