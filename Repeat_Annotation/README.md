@@ -46,7 +46,7 @@ Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 5. Remove classifications with question marks
 6. Use bedmap to map and echo the overlap size and mapped-element size
 
-**Make sure to have bedops available to your current working directory**
+*Make sure to have bedops available to your current working directory*
 
 #### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
 
