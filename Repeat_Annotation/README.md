@@ -36,7 +36,7 @@ Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 ## Complete the rest of the annotation with Repeat-Annotation.sh.ipynb 
 
 
-#### Written description of steps outlined in Repeat-Annotation.sh.ipynb
+<center>Written description of steps outlined in Repeat-Annotation.sh.ipynb</center>
 #### Map to DHS Masterlist and echo the overlap and mapped-element size
 
 1. Gunzip repeats_ucsc.gzip
