@@ -27,28 +27,11 @@ file type returned: gzip compressed
 
 ```
 
-
-*Sample Rows and Columns*
-
-| genoName  | genoStart | genoEnd  | strand | repName | repClass  | repFamily |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| chr1  |	67108753  | 67109046  | + | L1P5  | LINE  | L1  |
-| chr1  | 8388315 | 8388618 | - | AluY  | SINE  | Alu |
-| chr1  | 25165803  | 25166380  | + | L1MB5 | LINE  | L1  |
-| chr1  | 33554185  | 33554483  | - | AluSc | SINE  | Alu |
-| chr1  | 41942894  | 41943205  | - | AluY  | SINE  | Alu |
-
 ## Download DHS Masterlist
 * Go to [DHS Masterlist](https://zenodo.org/record/3542126#.XffhGZNKgWp)
 
 Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 
-```
-gunzip DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
-cut -f1-3 DHS_Index_and_Vocabulary_hg38_WM20190703.txt \
-| tail -n +2 \
-> DHS_Index.bed
-```
 
 # Map to DHS Masterlist and echo the overlap and mapped-element size
 
@@ -124,7 +107,7 @@ Counts:
 | Total |  1930749 |
 
 
-# Annotate Family Repeats
+# Annotate and Clean-up Family Repeats
 
 1. Extract SINE, LTR, DNA, and LINE annotated DHS's and place in separate bed files
 2. Split Classes into Families
@@ -137,7 +120,7 @@ Notes on Subfamilies
 * LINE -> L1, L2, Others
 
 > Need:
-> dhs_annotated_7-repeats.bed
+> dhs_annotated_7-classRepeats.bed
 
 Run:
 ```
