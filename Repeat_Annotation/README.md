@@ -66,5 +66,5 @@ Notes on Subfamilies
 
 ## Results
 
-Final directory will have 5 files and one "extra_files" subdirectory. DNA.bed, LINE.bed, LTR.bed, and SINE.bed are subsets of dhs_annotated_7-classRepeats.bed updated with the subfamilies listed above. The "extra_files" files directory will include the initial downloaded files and important temporary files that lead to these final files. 
+Final directory will have 5 files and one "extra_files" subdirectory. DNA.bed, LINE.bed, LTR.bed, and SINE.bed are subsets of dhs_annotated_7-classRepeats.bed updated with the subfamilies listed above. The "extra_files" directory will include the initial downloaded files and important temporary files that lead to these final files. 
 
