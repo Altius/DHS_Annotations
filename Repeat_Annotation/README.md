@@ -36,8 +36,8 @@ Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 ## Complete the rest of the annotation with Repeat-Annotation.sh.ipynb 
 
 
-##### Written description of steps outlined in Repeat-Annotation.sh.ipynb
-##### Map to DHS Masterlist and echo the overlap and mapped-element size
+#### Written description of steps outlined in Repeat-Annotation.sh.ipynb
+#### Map to DHS Masterlist and echo the overlap and mapped-element size
 
 1. Gunzip repeats_ucsc.gzip
 2. Remove Header
@@ -48,11 +48,11 @@ Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 
 *Make sure to have bedops available to your current working directory*
 
-##### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
+#### Choose element that has the largest overlap or the largest fraction of overlap, if there is a tie.
 
 Resulting bed file (dhs_annotated_7-classRepeats.bed) will include 7 unique elements under class: SINE, LINE, LTR, Simple_repeat, DNA, Low_Complexity, or Other (includes anything not already named)
 
-##### Annotate and Clean-up Family Repeats
+#### Annotate and Clean-up Family Repeats
 
 1. Extract SINE, LTR, DNA, and LINE annotated DHS's and place in separate bed files
 2. Split Classes into Families
