@@ -20,13 +20,6 @@ Annotating the DHS Masterlist with Gencode
 
 Download DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
 
-```
-gunzip DHS_Index_and_Vocabulary_hg38_WM20190703.txt.gz
-cut -f1-3 DHS_Index_and_Vocabulary_hg38_WM20190703.txt \
-| tail -n +2 \
-> DHS_Index.bed
-```
-
 # Parse Gencode and map to DHS Masterlist
 
 1. From gencode.v28.basic.annotation.gtf, removed rows when start coordinate = end coordinate (2K cases) and when gencode annotation was “Selenocysteine” or “codon”.
